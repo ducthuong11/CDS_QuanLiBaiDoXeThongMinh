@@ -73,7 +73,7 @@
 
 ## 🚀 5. Hướng dẫn cài đặt & chạy ứng dụng
 
-### 🧩 Yêu cầu hệ thống
+🧩 Yêu cầu hệ thống
 - **Hệ điều hành:** Windows 10/11, macOS hoặc Linux  
 - **JDK / Node.js / Python:** Tùy theo bản backend sử dụng  
 - **RAM:** Tối thiểu 4GB  
@@ -81,7 +81,7 @@
 
 ---
 
-### ⚙️ Cài đặt
+⚙️ Cài đặt
 ```
 # Clone project
 git clone https://github.com/ducthuong11/Smart-Parking-Management-Digital-Transformation.git
@@ -93,41 +93,41 @@ cd Smart-Parking-Management-Digital-Transformation
 npm install
 npm start
 ```
-###🧠 Chạy mô-đun IoT
+🧠 Chạy mô-đun IoT
 
 Nạp code cho ESP32/Arduino qua Arduino IDE
 
 Kết nối WiFi → gửi dữ liệu cảm biến về server (qua MQTT/HTTP)
 
-###🌐 Chạy giao diện Web
+🌐 Chạy giao diện Web
 ```
 npm run dev
 ```
 ## 📸 6. Giao diện minh họa
 
-###🔐 Màn hình đăng nhập
+🔐 Màn hình đăng nhập
 
 <img width="580" src="https://github.com/user-attachments/assets/aaaaa111-1234-4b44-9ccc-987654321000" />
 
-###🚗 Giao diện bãi đỗ xe
+🚗 Giao diện bãi đỗ xe
 
 <img width="700" src="https://github.com/user-attachments/assets/bbbbb222-2345-4c33-8ddd-987654321111" />
 
-###📊 Thống kê hệ thống
+📊 Thống kê hệ thống
 
 <img width="750" src="https://github.com/user-attachments/assets/ccccc333-3456-4d22-7eee-987654321222" />
 
 ## 📞 7. Liên hệ
 
-###👤 Họ và tên: Nguyễn Đức Thường
+👤 Họ và tên: Nguyễn Đức Thường
 
-###🎓 Lớp: CNTT 16-04
+🎓 Lớp: CNTT 16-04
 
-###📧 Email: ducthuong246ss@gmail.com
+📧 Email: ducthuong246ss@gmail.com
 
-###🏫 Trường: Đại học Đại Nam
+🏫 Trường: Đại học Đại Nam
 
-###🔗 Website: https://dainam.edu.vn
+🔗 Website: https://dainam.edu.vn
 
 
 
