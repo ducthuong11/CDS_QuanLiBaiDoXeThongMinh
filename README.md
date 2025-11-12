@@ -111,11 +111,16 @@ npm run dev
 
 🚗 Giao diện bãi đỗ xe
 
-<img width="700" src="https://github.com/user-attachments/assets/bbbbb222-2345-4c33-8ddd-987654321111" />
+<img width="1359" height="359" alt="image" src="https://github.com/user-attachments/assets/45d51e74-54bd-4476-aa73-91dad758da2c" />
+
+<img width="1354" height="563" alt="image" src="https://github.com/user-attachments/assets/9bfd4ffb-376e-44a6-92ca-471c3ce97b35" />
+
+
 
 📊 Thống kê hệ thống
 
-<img width="750" src="https://github.com/user-attachments/assets/ccccc333-3456-4d22-7eee-987654321222" />
+<img width="489" height="860" alt="image" src="https://github.com/user-attachments/assets/aa335518-0642-418a-9590-619e0e28f93c" />
+
 
 ## 📞 7. Liên hệ
 
