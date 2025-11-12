@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Parking - Quản lý bãi đỗ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="30" height="30" aria-hidden><path fill="#fff" d="M5 16h14v2H5zM5 6h14v2H5zM5 11h14v2H5z"/></svg>
+      <div>
+        <h1>Smart Parking</h1>
+        <small>Quản lý bãi đỗ xe thông minh</small>
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <button id="exportBtn" title="Export CSV">Export CSV</button>
+      <button id="resetBtn" class="warn" title="Reset dữ liệu">Reset</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="left-panel">
+      <div class="card">
+        <h2>Vehicle Check-in</h2>
+        <form id="checkinForm" class="form-grid">
+          <label>License plate
+            <input id="plateIn" placeholder="VD: 89AA-11234" required>
+          </label>
+          <label>Vehicle type
+            <select id="typeIn">
+              <option value="bike">Xe máy</option>
+              <option value="car">Ô tô</option>
+            </select>
+          </label>
+          <label>Check-in time
+            <input id="timeIn" type="datetime-local">
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="primary">Check in</button>
+            <button type="button" id="clearBtn">Clear</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="card small">
+        <h3>Payment / Check-out</h3>
+        <div class="checkout">
+          <input id="plateOut" placeholder="Nhập biển số để trả" />
+          <div>
+            <button id="calcBtn">Calculate</button>
+            <button id="checkoutBtn" class="primary" disabled>Checkout</button>
+          </div>
+        </div>
+        <div id="checkoutInfo" class="checkout-info hidden"></div>
+      </div>
+
+      <div class="card stats">
+        <div>
+          <h4 id="countText">Vehicles: 0 / 500</h4>
+          <p id="revenueText">Revenue: 0 VNĐ</p>
+        </div>
+        <div class="filters">
+          <input id="searchInput" placeholder="Search plate..." />
+          <select id="filterType">
+            <option value="all">All types</option>
+            <option value="bike">Xe máy</option>
+            <option value="car">Ô tô</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="right-panel">
+      <div class="card">
+        <h2>Parking slots (preview)</h2>
+        <div id="slotsGrid" class="slots-grid"></div>
+      </div>
+
+      <div class="card">
+        <h2>Current Parked Vehicles</h2>
+        <div class="table-wrap">
+          <table id="vehicleTable">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Plate</th>
+                <th>Type</th>
+                <th>Check-in</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Payment Modal (simple) -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="modalClose">&times;</button>
+      <h3>Checkout</h3>
+      <div id="modalBody"></div>
+      <div class="modal-actions">
+        <button id="payCash" class="primary">Pay Cash</button>
+        <button id="payCard">Pay Card</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <small>Built for course project — Smart Parking (simple demo)</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
